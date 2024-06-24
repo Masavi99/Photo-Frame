@@ -1,3 +1,4 @@
+
 window.mobileCheck = function() {
     let check = false;
     (function(a) {
@@ -24,7 +25,7 @@ var och = cw / 350 * 350;
  * imgMultiplier: ratio to original overlay image dimension
  */
 window.downloadCanvas = function() {
-    console.log("downloadCanvas called");  // Debugging log
+   
     var link = document.createElement('a');
     link.download = filename + '.png';
     link.href = canvas.toDataURL({
@@ -51,7 +52,7 @@ window.updatePreview = function(url) {
             }, 5000);
         }
         var oImg = img.set({
-            left: 0, // Specify the exact position you want the image to be
+            left: 10, // Specify the exact position you want the image to be
             top: 0, // Specify the exact position you want the image to be
             cornerColor: 'red',
             cornerSize: 20,
@@ -113,7 +114,7 @@ window.onFileChange = function(input) {
 /** Calc the width and height of canvas for responsive design */
 
 window.freshCanvas = function() {
-    var selectedBannerSrc = document.getElementById("canva").src;
+    var selectedBannerSrc = document.getElementById("selected-banner").src;
     if (selectedBannerSrc) {
         fabric.Image.fromURL(selectedBannerSrc, function(img) {
             imgRatio = img.width / img.height;
@@ -168,3 +169,4 @@ $(document).ready(function() {
     });
     
 });
+

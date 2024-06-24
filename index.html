@@ -8,24 +8,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/node_modules/fabric-with-gestures/dist/fabric.min.js"></script>
     <title>Photo Frame</title>
+   
 </head>
 
 <body>
     <div id="wrapper">
-
         <div class="templates">
             <h1>Select a Banner</h1>
             <div class="banner-gallery">
                 <div class="banner-item">
-                    <img src="/assets/nomonoyon_banner_full_frame-0357e0b8.png" alt="Banner 1" class="banner-image"
-                        onclick="selectBanner('/assets/nomonoyon_banner_full_frame-0357e0b8.png')">
+                    <img src="/assets/abstract-shape-banner-free-png.webp" alt="Banner 1" class="banner-image"
+                        onclick="selectBanner('/assets/abstract-shape-banner-free-png.webp')">
+                </div>
+                <div class="banner-item">
+                    <img src="/assets/Champion.png" alt="Banner 1" class="banner-image"
+                        onclick="selectBanner('/assets/Champion.png')">
                 </div>
                 <div class="banner-item">
                     <img src="/assets/nomonoyon_banner_full_frame-3bb35b9c.png" alt="Banner 2" class="banner-image"
                         onclick="selectBanner('/assets/nomonoyon_banner_full_frame-3bb35b9c.png')">
                 </div>
-
-
             </div>
             <div id="selected-banner-container" class="hidden">
                 <h2>Selected Banner</h2>
@@ -37,33 +39,18 @@
                 </div>
                 <div id="photo-frame">
                     <canvas id="canva"></canvas>
-
-                </div>
-                <div id="download-btn" disabled="">
-
-
-                    <button onclick="downloadCanvas()">Download</button>
-                    <div id="download-btn" disabled>
-
+                    <!-- <div id="user-details"> -->
+                        
                     </div>
-
                 </div>
+
             </div>
-
-
         </div>
-
-
-
-    </div>
-
-
-
-
-    </div>
+        <button id="download-btn" disabled>
+            Download
+        </button>
     </div>
     <script src="/assets/main.js"></script>
-
 </body>
 
 </html>
